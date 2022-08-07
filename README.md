@@ -1,2 +1,2 @@
-# loan-emi-calc
+# Loan EMI Calculator
 Loan EMI Calculator powered by React
