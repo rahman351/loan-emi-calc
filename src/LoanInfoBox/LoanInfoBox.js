@@ -19,7 +19,9 @@ const LoanInfoBox = (props) => {
               <div className="left-top-left">Load Amount  </div>            
               <div className="left-top-right">
                 <div className="currencysymbol">₹</div>
-                <div className="loan-amount">{loanAmount}</div>
+                <div className="loan-amount">
+                  {parseFloat(loanAmount.toFixed(2)).toLocaleString('en-IN')}
+                </div>
               </div>
             </div>
             <div className="left-bottom">

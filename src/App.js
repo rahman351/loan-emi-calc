@@ -50,19 +50,19 @@ function App() {
           <div className="details">
             <div className='amount-detail'>
                <div>Monthly EMI </div> 
-               <div>₹{monthlyEmi.toFixed(2)}</div>   
+               <div>₹{parseFloat(monthlyEmi.toFixed(2)).toLocaleString('en-IN')}</div>   
             </div>
             <div className='amount-detail'>
                <div>Principal Amount </div> 
-               <div>₹{loanAmount.toFixed(2)}</div>   
+               <div>₹{parseFloat(loanAmount.toFixed(2)).toLocaleString('en-IN')}</div>   
             </div>
             <div className='amount-detail'>
                <div>Total Interest</div> 
-               <div>₹{totalInterest.toFixed(2)}</div>   
+               <div>₹{parseFloat(totalInterest.toFixed(2)).toLocaleString('en-IN')}</div>   
             </div>
             <div className='amount-detail'>
                <div>Total Amount</div> 
-               <div>₹{totalAmount.toFixed(2)}</div>   
+               <div>₹{parseFloat(totalAmount.toFixed(2)).toLocaleString('en-IN')}</div>   
             </div>
           </div>
         </div>
