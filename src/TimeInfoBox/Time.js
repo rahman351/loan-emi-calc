@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const TimeInfoBox = () => {
 
-    const [time,setTime]=useState(50);
+    const [time,setTime]=useState(15);
       const timeperiod= (time) =>{
         setTime(time);
       }
@@ -18,7 +18,7 @@ const TimeInfoBox = () => {
           </div>
         </div>
         <div className="left-bottom">
-            <Slider onChange ={timeperiod}bgcolor="#00ff99" />
+            <Slider onChange ={timeperiod} bgcolor="#ff3385" maxValue={30}/>
         </div>
       </div>
     );

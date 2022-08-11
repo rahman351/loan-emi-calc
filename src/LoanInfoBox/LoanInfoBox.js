@@ -5,7 +5,7 @@ import "./LoanInfoBox.css"
 
 const LoanInfoBox = () => {
 
-      const [loanAmount,setLonaAmount]=useState(50);
+      const [loanAmount,setLonaAmount]=useState(5000000);
       const getLoanAmount = (amount) =>{
         setLonaAmount(amount);
 
@@ -21,7 +21,7 @@ const LoanInfoBox = () => {
               </div>
             </div>
             <div className="left-bottom">
-                <Slider onChange={getLoanAmount} bgcolor="#00ff99" />
+                <Slider onChange={getLoanAmount} bgcolor="#00ff99" maxValue ={10000000} />
             </div>
           </div>
     );

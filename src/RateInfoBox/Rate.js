@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const RateInfoBox = () => {
 
-    const [rate,setRate]=useState(50);
+    const [rate,setRate]=useState(15);
       const ratePercentage= (rate) =>{
         setRate(rate);
 
@@ -18,7 +18,7 @@ const RateInfoBox = () => {
           </div>
         </div>
         <div className="left-bottom">
-            <Slider onChange ={ratePercentage} bgcolor="#00ff99" />
+            <Slider onChange ={ratePercentage} bgcolor="#33adff" maxValue={30}/>
         </div>
       </div>
     );
