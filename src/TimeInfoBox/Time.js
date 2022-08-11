@@ -14,8 +14,8 @@ const TimeInfoBox = (props) => {
         <div className="left-top">
           <div className="left-top-left">Years</div>            
           <div className="left-top-right">
-            <div className="currencysymbol">Yr</div>
             <div className="loan-amount">{time}</div>
+            <div className="currencysymbol">Yr</div>
           </div>
         </div>
         <div className="left-bottom">
