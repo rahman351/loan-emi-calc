@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Slider from "../slider/Slider";
-import "./LoanInfoBox.css"
+
 
 
 const LoanInfoBox = (props) => {
