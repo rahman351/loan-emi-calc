@@ -3,6 +3,7 @@ import './App.css';
 import LoanInfoBox from './LoanInfoBox/LoanInfoBox';
 import RateInfoBox from './RateInfoBox/Rate';
 import TimeInfoBox from './TimeInfoBox/Time';
+import PieChart  from './PieChart/PieChart';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
 
   return (
     <div className="App">
+      <header> Loan EMI Calculator</header>
       <div className="container">
         <div className="left">         
           <LoanInfoBox LoanAmount={setLoanAmount}/>
@@ -65,8 +67,10 @@ function App() {
           </div>
         </div>
         <div className="right">
+          <PieChart labels={["Principal Amount", "Interest Amount"]} data={[loanAmount,totalInterest]}/>
         </div>
       </div>
+      <footer> Source code : <a href="https://github.com/rahman351/loan-emi-calc">Click Here</a></footer>
     </div>
   );
 }
