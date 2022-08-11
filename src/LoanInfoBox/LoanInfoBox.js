@@ -3,11 +3,13 @@ import Slider from "../slider/Slider";
 import "./LoanInfoBox.css"
 
 
-const LoanInfoBox = () => {
+const LoanInfoBox = (props) => {
 
-      const [loanAmount,setLonaAmount]=useState(5000000);
+      const [loanAmount,setLoanAmount]=useState(5000000);
       const getLoanAmount = (amount) =>{
-        setLonaAmount(amount);
+        setLoanAmount(amount);
+        props.LoanAmount(amount);
+
 
       }
   

@@ -1,11 +1,12 @@
 import Slider from "../slider/Slider";
 import { useState } from "react";
 
-const RateInfoBox = () => {
+const RateInfoBox = (props) => {
 
     const [rate,setRate]=useState(15);
       const ratePercentage= (rate) =>{
         setRate(rate);
+        props.rate(rate);
 
       }
     return (

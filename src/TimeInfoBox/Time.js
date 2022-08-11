@@ -1,11 +1,12 @@
 import Slider from "../slider/Slider";
 import { useState } from "react";
 
-const TimeInfoBox = () => {
+const TimeInfoBox = (props) => {
 
     const [time,setTime]=useState(15);
       const timeperiod= (time) =>{
         setTime(time);
+        props.time(time);
       }
     
     return (
