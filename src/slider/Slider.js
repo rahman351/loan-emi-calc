@@ -8,7 +8,7 @@ const Slider = (props) => {
     
     const doSlide = (e) => {
         setSliderVal(e.target.value);
-        props.onChange(e.target.value);
+        props.onChange(parseFloat(e.target.value));
         let position =(e.target.value/props.maxValue)*100;
         setGradient('linear-gradient(to right,  '+props.bgcolor+' 0%,'+props.bgcolor+' '+position+'%,#f6f6f6 '+position+'%,#f6f6f6 100%)')
     }
@@ -16,7 +16,8 @@ const Slider = (props) => {
         <div>
             <div className='slider-container'>
                 <input className='box' type="range" min="0" max={props.maxValue}
-                value={sliderVal} 
+                value={sliderVal}
+                step = {props.step} 
                 onChange={(e)=> {doSlide(e)}} 
                 style = {{background: gradient}}
                 />

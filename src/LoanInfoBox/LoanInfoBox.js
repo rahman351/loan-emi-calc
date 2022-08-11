@@ -23,7 +23,7 @@ const LoanInfoBox = (props) => {
               </div>
             </div>
             <div className="left-bottom">
-                <Slider onChange={getLoanAmount} bgcolor="#00ff99" maxValue ={10000000} />
+                <Slider step={50000} onChange={getLoanAmount} bgcolor="#00ff99" maxValue ={10000000} />
             </div>
           </div>
     );

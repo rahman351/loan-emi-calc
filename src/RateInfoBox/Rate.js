@@ -19,7 +19,7 @@ const RateInfoBox = (props) => {
           </div>
         </div>
         <div className="left-bottom">
-            <Slider onChange ={ratePercentage} bgcolor="#33adff" maxValue={30}/>
+            <Slider step={0.25}onChange ={ratePercentage} bgcolor="#33adff" maxValue={30}/>
         </div>
       </div>
     );

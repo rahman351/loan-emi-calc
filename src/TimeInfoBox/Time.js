@@ -19,7 +19,7 @@ const TimeInfoBox = (props) => {
           </div>
         </div>
         <div className="left-bottom">
-            <Slider onChange ={timeperiod} bgcolor="#ff3385" maxValue={30}/>
+            <Slider step={1}onChange ={timeperiod} bgcolor="#ff3385" maxValue={30}/>
         </div>
       </div>
     );

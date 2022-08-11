@@ -21,7 +21,6 @@ function App() {
 
       const calcFactorTwo = () =>{
         let monthlyRate = (rate/12)/100;
-        console.log(monthlyRate);
         let totalMonths =time*12;
         let factor2 = Math.pow(1+monthlyRate,totalMonths)-1;
         return factor2;
@@ -45,11 +44,24 @@ function App() {
           <LoanInfoBox LoanAmount={setLoanAmount}/>
           <RateInfoBox  rate={setRate}/>
           <TimeInfoBox  time={setTime}/>
+          
           <div className="details">
-            <div>Monthly EMI ₹{monthlyEmi.toFixed(2)} </div>
-            <div>Principal Amount ₹{loanAmount.toFixed(2)}</div>
-            <div>Total Interest ₹{totalInterest.toFixed(2)}</div>
-            <div>Total Amount ₹{totalAmount.toFixed(2)} </div>
+            <div className='amount-detail'>
+               <div>Monthly EMI </div> 
+               <div>₹{monthlyEmi.toFixed(2)}</div>   
+            </div>
+            <div className='amount-detail'>
+               <div>Principal Amount </div> 
+               <div>₹{loanAmount.toFixed(2)}</div>   
+            </div>
+            <div className='amount-detail'>
+               <div>Total Interest</div> 
+               <div>₹{totalInterest.toFixed(2)}</div>   
+            </div>
+            <div className='amount-detail'>
+               <div>Total Amount</div> 
+               <div>₹{totalAmount.toFixed(2)}</div>   
+            </div>
           </div>
         </div>
         <div className="right">
