@@ -13,6 +13,27 @@
   grid-template-columns: 0.5fr 0.5fr;
 }
 
+.left{
+  margin: 5px;
+}
+
+.left-info{
+  margin: 5px;
+}
+.left-top{
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.left-top-right{
+  display: flex;
+  justify-content: space-between;   
+  margin: 5px;
+}
+
+
+
+
 .right{
   margin: 5px;
 }
