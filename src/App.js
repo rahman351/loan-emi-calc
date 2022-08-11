@@ -1,10 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import LoanInfoBox from './LoanInfoBox/LoanInfoBox';
+import RateInfoBox from './RateInfoBox/Rate';
+import TimeInfoBox from './TimeInfoBox/Time';
+
 
 function App() {
   return (
     <div className="App">
-      Loan EMI Calculator
+      <div className="container">
+        <div className="left">         
+          <LoanInfoBox/>
+          <RateInfoBox/>
+          <TimeInfoBox/>
+          <div className="details">
+            <div>Monthly EMI </div>
+            <div>Principal Amount </div>
+            <div>Total Interest </div>
+            <div>Total Amount </div>
+          </div>
+        </div>
+        <div className="right">
+        </div>
+      </div>
     </div>
   );
 }

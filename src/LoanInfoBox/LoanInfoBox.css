@@ -1,0 +1,20 @@
+.left{
+    border: 2px solid black;
+    margin: 5px;
+  }
+  
+  .left-info{
+    margin: 5px;
+  }
+  .left-top{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-top-right{
+    display: flex;
+    justify-content: space-between;   
+    margin: 5px;
+  }
+
+  
