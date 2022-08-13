@@ -40,6 +40,7 @@ function App() {
 
   return (
     <div className="App">
+      <link href='https://fonts.googleapis.com/css?family=Bai Jamjuree' rel='stylesheet'></link>
       <header> Loan EMI Calculator</header>
       <div className="container">
         <div className="left">         
@@ -70,7 +71,7 @@ function App() {
           <PieChart labels={["Principal Amount", "Interest Amount"]} data={[loanAmount,totalInterest]}/>
         </div>
       </div>
-      <footer> Source code : <a href="https://github.com/rahman351/loan-emi-calc">Click Here</a></footer>
+      <footer> Source code : <a href="https://github.com/rahman351/loan-emi-calc">https://github.com/rahman351/loan-emi-calc</a></footer>
     </div>
   );
 }

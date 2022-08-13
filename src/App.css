@@ -46,3 +46,25 @@
 .details{
   margin-top: 30px;
 }
+
+/* night */
+.App{
+  display: grid;
+  grid-template-rows: 0.15fr 0.75fr 0.10fr;
+
+
+
+}
+
+.App header{
+  font-family: 'Bai Jamjuree';
+  font-size: 60px;
+  text-align: center;
+  background-color: aqua;
+  text-transform: capitalize;
+}
+
+.App footer{
+  font-family: 'Bai Jamjuree';
+  text-align: center;
+}
