@@ -59,8 +59,9 @@
 .App header{
   font-family: 'Bai Jamjuree';
   font-size: 60px;
+  color:whitesmoke;
   text-align: center;
-  background-color: aqua;
+  background: linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);
   text-transform: capitalize;
 }
 
